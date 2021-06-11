@@ -1,0 +1,7 @@
+{
+  "manifest_path": "./manifest",
+  "tsv_path": "./manifest/tsv",
+  "output_dir": "./manifest/src",
+  "vq-wav2vec": "",
+  "vqs_output_dir": "./vqs"
+}

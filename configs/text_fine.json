@@ -1,0 +1,11 @@
+{
+  "seed": 1234,
+  "lr": 1e-5,
+  "anneal_rate": 1.1,
+  "batch_size": 32,
+  "epoch": 100,
+  "eval_size": 32,
+  "bert_dir": "",
+  "checkpoint": "model.pt",
+  "intent_path": "./manifest/FSC_dict"
+}

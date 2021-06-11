@@ -1,0 +1,16 @@
+{
+  "seed": 1234,
+  "save_folder": "",
+  "lr": 1e-4,
+  "learning_anneal": 1.05,
+  "batch_size": 20,
+  "epochs": 100,
+  "vq_bert_dict": "",
+  "text_bert_dict": "",
+  "rnn-type": "lstm",
+  "label": "./manifest/labels.json",
+  "pre_kd_model": "",
+  "hidden_size": 768,
+  "hidden_layers": 5,
+  "save_path": ""
+}
