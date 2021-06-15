@@ -154,7 +154,7 @@ if __name__ == '__main__':
                         channel_span=config['channel_span'],
                         num_class=num_class,
                         augment=config['emb_masking'])
-
+    
     if config['am_pre_model'] is not None:
         logger.info("")
         logger.info("ASR parameter loaded")
@@ -172,7 +172,7 @@ if __name__ == '__main__':
                 new_state_dict[k] = v
 
             key_list = list(new_state_dict.keys())
-            # 203 277
+            # for load asr parameter, update soon
             vq_key = key_list[:203]
             crnn_key = key_list[203:277]
 
@@ -188,7 +188,7 @@ if __name__ == '__main__':
                                  amsgrad=False)
 
     criterion = nn.CrossEntropyLoss(reduction='mean')
-    L1Loss = torch.nn.L1Loss(reduction='sum')#torch.nn.MSELoss(reduction='sum')#
+    L1Loss = torch.nn.L1Loss(reduction='sum')
     batch_time = AverageMeter()
     data_time = AverageMeter()
     losses = AverageMeter()
